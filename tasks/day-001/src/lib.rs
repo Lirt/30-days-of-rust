@@ -17,5 +17,8 @@ mod tests {
         assert_eq!(sum(into_strings([0, 1, 2, 3])), 6);
         assert_eq!(sum(into_strings([-27, -0, 7])), -20);
         assert_eq!(sum(into_strings([])), 0);
+        let mut test_case_4: Vec<String> = into_strings([3, 5, 7]);
+        test_case_4.append(&mut vec![String::from("handle_me")]);
+        assert_eq!(sum(test_case_4), 15);
     }
 }
